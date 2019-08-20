@@ -17,7 +17,7 @@ def get_filters():
     """
     print('Hello! Let\'s explore some US bikeshare data!')
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    c=['chicago','new york city','washington']
+    c=['CHICAGO','NEW YORK','WASHINGTON']
     city = input("Which city would you like to choose data for chicago,new york city, washington: ")
     while city not in c:
         print("Incorrect city value. Please select from 3 cities - chicago, washington and new york city!")
@@ -186,6 +186,8 @@ def user_stats(df):
     print('Earliest Year of Birth:',earliest_dob)
     recent_dob = df['Birth Year'].max()
     print('Recent Year of Birth:',recent_dob)
+    mean_dob = df['Birth Year'].mean()
+    print('Recent Year of Birth:',mean_dob)
     common_dob = df['Birth Year'].mode()
     print('Common Year of Birth:',common_dob)    
 
@@ -216,7 +218,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
-        display_rawdata(df)
+        """display_rawdata(df)"""
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
