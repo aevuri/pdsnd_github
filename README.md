@@ -1,5 +1,5 @@
 ### Date created
-Include the date you created this project.
+Include the date you created this project in mm/dd/yyyy.
 
 ### Project Title
 Replace the Project Title & author name
