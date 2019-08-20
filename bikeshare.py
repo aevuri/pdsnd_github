@@ -186,6 +186,8 @@ def user_stats(df):
     print('Earliest Year of Birth:',earliest_dob)
     recent_dob = df['Birth Year'].max()
     print('Recent Year of Birth:',recent_dob)
+    mean_dob = df['Birth Year'].mean()
+    print('Recent Year of Birth:',mean_dob)
     common_dob = df['Birth Year'].mode()
     print('Common Year of Birth:',common_dob)    
 
